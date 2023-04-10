@@ -7,7 +7,7 @@ Pod::Spec.new do |s|
   s.author       = { "Nikita Frolov" => "https://sourceforge.net/u/gnawer/profile/" }
   s.source       = { :git => "https://github.com/IPTVX/smb4ios.git", :tag => s.version.to_s }
   s.ios.deployment_target = '9.0'
-    s.ios.deployment_target = '13.0'
+  s.tvos.deployment_target = '13.0'
   s.source_files = 'Common/*.{h,m}', 'Lib/*.{h,c}', 'SMB/*.{h,m}', 'SMB/DCERPC/*.{h,m}', 'SMB/NetBIOS/*.{h,m}', 'SMB/RAP/*.{h,m}'
   s.requires_arc = true
   s.frameworks = 'Foundation', 'CFNetwork'
